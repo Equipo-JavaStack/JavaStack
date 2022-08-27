@@ -2,90 +2,70 @@ package co.gov.stack.contable.cartera.entidades;
 
 public class Empresa {
 
-    private long idEmpleado;
-    private String nombreEmpleado;
-    private String apellidoEmpleado;
-    private String correoEmpleado;
-    private String empresaEmpleado;
-    private String pass;
-    private String rolEmpleado;
-    private boolean estadoEmpleado;
+    private long idEmpresa;
+    private String nombreEmpresa;
+    private String direccionEmpresa;
+    private String telefonoEmpresa;
+    private String nitEmpresa;
+    private boolean estadoEmpresa;
 
-    public long getIdEmpleado() {
-        return idEmpleado;
+    public long getIdEmpresa() {
+        return idEmpresa;
     }
 
-    public void setIdEmpleado(long idEmpleado) {
-        this.idEmpleado = idEmpleado;
+    public void setIdEmpresa(long idEmpresa) {
+        this.idEmpresa = idEmpresa;
     }
 
-    public String getNombreEmpleado() {
-        return nombreEmpleado;
+    public String getNombreEmpresa() {
+        return nombreEmpresa;
     }
 
-    public void setNombreEmpleado(String nombreEmpleado) {
-        this.nombreEmpleado = nombreEmpleado;
+    public void setNombreEmpresa(String nombreEmpresa) {
+        this.nombreEmpresa = nombreEmpresa;
     }
 
-    public String getApellidoEmpleado() {
-        return apellidoEmpleado;
+    public String getDireccionEmpresa() {
+        return direccionEmpresa;
     }
 
-    public void setApellidoEmpleado(String apellidoEmpleado) {
-        this.apellidoEmpleado = apellidoEmpleado;
+    public void setDireccionEmpresa(String direccionEmpresa) {
+        this.direccionEmpresa = direccionEmpresa;
     }
 
-    public String getCorreoEmpleado() {
-        return correoEmpleado;
+    public String getTelefonoEmpresa() {
+        return telefonoEmpresa;
     }
 
-    public void setCorreoEmpleado(String correoEmpleado) {
-        this.correoEmpleado = correoEmpleado;
+    public void setTelefonoEmpresa(String telefonoEmpresa) {
+        this.telefonoEmpresa = telefonoEmpresa;
     }
 
-    public String getEmpresaEmpleado() {
-        return empresaEmpleado;
+    public String getNitEmpresa() {
+        return nitEmpresa;
     }
 
-    public void setEmpresaEmpleado(String empresaEmpleado) {
-        this.empresaEmpleado = empresaEmpleado;
+    public void setNitEmpresa(String nitEmpresa) {
+        this.nitEmpresa = nitEmpresa;
     }
 
-    public String getPass() {
-        return pass;
+    public boolean isEstadoEmpresa() {
+        return estadoEmpresa;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
-    }
-
-    public String getRolEmpleado() {
-        return rolEmpleado;
-    }
-
-    public void setRolEmpleado(String rolEmpleado) {
-        this.rolEmpleado = rolEmpleado;
-    }
-
-    public boolean isEstadoEmpleado() {
-        return estadoEmpleado;
-    }
-
-    public void setEstadoEmpleado(boolean estadoEmpleado) {
-        this.estadoEmpleado = estadoEmpleado;
+    public void setEstadoEmpresa(boolean estadoEmpresa) {
+        this.estadoEmpresa = estadoEmpresa;
     }
 
     @Override
     public String toString() {
         return "Empresa{" +
-                "idEmpleado=" + idEmpleado +
-                ", nombreEmpleado='" + nombreEmpleado + '\'' +
-                ", apellidoEmpleado='" + apellidoEmpleado + '\'' +
-                ", correoEmpleado='" + correoEmpleado + '\'' +
-                ", empresaEmpleado='" + empresaEmpleado + '\'' +
-                ", pass='" + pass + '\'' +
-                ", rolEmpleado='" + rolEmpleado + '\'' +
-                ", estadoEmpleado=" + estadoEmpleado +
+                "idEmpresa=" + idEmpresa +
+                ", nombreEmpresa='" + nombreEmpresa + '\'' +
+                ", direccionEmpresa='" + direccionEmpresa + '\'' +
+                ", telefonoEmpresa='" + telefonoEmpresa + '\'' +
+                ", nitEmpresa='" + nitEmpresa + '\'' +
+                ", estadoEmpresa=" + estadoEmpresa +
                 '}';
     }
 }
