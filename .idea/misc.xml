@@ -3,7 +3,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/cartera/pom.xml" />
+        <option value="$PROJECT_DIR$/cartera/cartera/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,6 +6,14 @@ public class MovimientoDinero {
     private String conceptoDinero;
     private String usuarioMovimiento;
 
+
+    public MovimientoDinero(long ingresoDinero, long egresoDinero, String conceptoDinero, String usuarioMovimiento) {
+        this.ingresoDinero = ingresoDinero;
+        this.egresoDinero = egresoDinero;
+        this.conceptoDinero = conceptoDinero;
+        this.usuarioMovimiento = usuarioMovimiento;
+    }
+
     public long getIngresoDinero() {
         return ingresoDinero;
     }

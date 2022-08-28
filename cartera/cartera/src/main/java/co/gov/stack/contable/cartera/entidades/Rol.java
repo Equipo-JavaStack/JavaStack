@@ -6,6 +6,12 @@ public class Rol {
     private String descripcion;
     private Boolean estado;
 
+    public Rol(Long idRol, String descripcion, Boolean estado) {
+        this.idRol = idRol;
+        this.descripcion = descripcion;
+        this.estado = estado;
+    }
+
     public Long getIdRol() {
         return idRol;
     }

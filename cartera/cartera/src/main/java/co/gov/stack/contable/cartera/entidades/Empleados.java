@@ -10,6 +10,17 @@ public class Empleados {
     private String rol;
     private boolean estado;
 
+    public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, String rol, boolean estado) {
+        this.idEmpleado = idEmpleado;
+        this.nombreEmpleado = nombreEmpleado;
+        this.apellidoEmpleado = apellidoEmpleado;
+        this.empresaEmplado = empresaEmplado;
+        this.correoEmpleado = correoEmpleado;
+        this.pass = pass;
+        this.rol = rol;
+        this.estado = estado;
+    }
+
     public long getIdEmpleado() {
         return idEmpleado;
     }
