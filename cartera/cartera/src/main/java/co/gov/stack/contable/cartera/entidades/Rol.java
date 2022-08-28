@@ -2,21 +2,23 @@ package co.gov.stack.contable.cartera.entidades;
 
 public class Rol {
 
-    private Long idRol;
+    private long idRol;
     private String descripcion;
     private Boolean estado;
 
-    public Rol(Long idRol, String descripcion, Boolean estado) {
+    public Rol(long idRol, String descripcion, Boolean estado) {
         this.idRol = idRol;
         this.descripcion = descripcion;
         this.estado = estado;
     }
 
     public Long getIdRol() {
+
         return idRol;
     }
 
     public void setIdRol(Long idRol) {
+
         this.idRol = idRol;
     }
 

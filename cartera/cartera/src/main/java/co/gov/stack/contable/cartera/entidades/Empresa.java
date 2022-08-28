@@ -78,4 +78,6 @@ public class Empresa {
                 ", estadoEmpresa=" + estadoEmpresa +
                 '}';
     }
+
+
 }
