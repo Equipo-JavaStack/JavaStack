@@ -15,7 +15,7 @@ public class CarteraApplication {
 		//EMPRESA
 		Empresa empresa = new Empresa(1,"JavaStack","calle 20 #5-5","7219292","12345",true);
 		System.out.println(empresa);
-		empresa.setDireccionEmpresa("avenida 20 con 1");
+		empresa.setDireccionEmpresa("avenida 20 con 15");
 		empresa.setTelefonoEmpresa("3007791035");
 		empresa.getDireccionEmpresa();
 		empresa.getTelefonoEmpresa();
