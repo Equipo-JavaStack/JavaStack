@@ -1,4 +1,4 @@
-package co.gov.stack.contable.cartera.entidades;
+package co.gov.javastack.contable.cartera.entidades;
 
 public class Empleados {
     private long idEmpleado;

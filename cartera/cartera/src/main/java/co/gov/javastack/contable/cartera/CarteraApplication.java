@@ -1,9 +1,13 @@
-package co.gov.stack.contable.cartera;
+package co.gov.javastack.contable.cartera;
 
-import co.gov.stack.contable.cartera.entidades.Empleados;
-import co.gov.stack.contable.cartera.entidades.Empresa;
-import co.gov.stack.contable.cartera.entidades.MovimientoDinero;
-import co.gov.stack.contable.cartera.entidades.Rol;
+import co.gov.javastack.contable.cartera.entidades.Empleados;
+import co.gov.javastack.contable.cartera.entidades.Empresa;
+import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
+import co.gov.javastack.contable.cartera.entidades.Rol;
+import co.gov.javastack.contable.cartera.entidades.Empleados;
+import co.gov.javastack.contable.cartera.entidades.Empresa;
+import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
+import co.gov.javastack.contable.cartera.entidades.Rol;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
