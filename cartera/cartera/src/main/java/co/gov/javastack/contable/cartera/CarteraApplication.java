@@ -3,11 +3,11 @@ package co.gov.javastack.contable.cartera;
 import co.gov.javastack.contable.cartera.entidades.Empleados;
 import co.gov.javastack.contable.cartera.entidades.Empresa;
 import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
-import co.gov.javastack.contable.cartera.entidades.Rol;
+
 import co.gov.javastack.contable.cartera.entidades.Empleados;
 import co.gov.javastack.contable.cartera.entidades.Empresa;
 import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
-import co.gov.javastack.contable.cartera.entidades.Rol;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -25,14 +25,8 @@ public class CarteraApplication {
 		empresa.getTelefonoEmpresa();
 		System.out.println(empresa);
 
-		//ROL
-		Rol rol = new Rol(1,"Admin",true);
-		System.out.println(rol);
-		rol.setDescripcion("operario");
-		rol.setEstado(false);
-		rol.getDescripcion();
-		rol.getEstado();
-		System.out.println(rol);
+
+
 
 		//EMPLEADO
 		Empleados empleado = new Empleados(5,"Diana","Araujo","JavaStack","dianaraujo@javastack.com","12345","Operario",true);
