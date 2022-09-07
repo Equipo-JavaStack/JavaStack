@@ -1,8 +1,6 @@
 package co.gov.javastack.contable.cartera;
 
-import co.gov.javastack.contable.cartera.entidades.Empleados;
-import co.gov.javastack.contable.cartera.entidades.Empresa;
-import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
+import co.gov.javastack.contable.cartera.entidades.*;
 
 import co.gov.javastack.contable.cartera.entidades.Empleados;
 import co.gov.javastack.contable.cartera.entidades.Empresa;
@@ -29,13 +27,15 @@ public class CarteraApplication {
 
 
 		//EMPLEADO
-		Empleados empleado = new Empleados(5,"Diana","Araujo","JavaStack","dianaraujo@javastack.com","12345","Operario",true);
+		Empleados empleado = new Empleados(5,"Diana","Araujo","JavaStack","dianaraujo@javastack.com","12345",Rol.Operario,true);
 		System.out.println(empleado);
 		empleado.setPass("5678");
-		empleado.setRol("Admin");
+		empleado.setRol(Rol.Administrador);
 		empleado.getPass();
 		empleado.getRol();
 		System.out.println(empleado);
+
+
 
 		//MOVIMIENTO DINERO
 		MovimientoDinero movDin = new MovimientoDinero(50000,20000,"venta producto","Operario");
