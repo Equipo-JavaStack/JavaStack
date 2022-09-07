@@ -7,10 +7,10 @@ public class Empleados {
     private String empresaEmplado;
     private String correoEmpleado;
     private String pass;
-    private String rol;
+    private Rol rol;
     private boolean estado;
 
-    public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, String rol, boolean estado) {
+    public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, Rol rol, boolean estado) {
         this.idEmpleado = idEmpleado;
         this.nombreEmpleado = nombreEmpleado;
         this.apellidoEmpleado = apellidoEmpleado;
@@ -69,11 +69,11 @@ public class Empleados {
         this.pass = pass;
     }
 
-    public String getRol() {
+    public Rol getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    public void setRol(Rol rol) {
         this.rol = rol;
     }
 
@@ -94,7 +94,7 @@ public class Empleados {
                 ", empresaEmplado='" + empresaEmplado + '\'' +
                 ", correoEmpleado='" + correoEmpleado + '\'' +
                 ", pass='" + pass + '\'' +
-                ", rol='" + rol + '\'' +
+                ", rol=" + rol +
                 ", estado=" + estado +
                 '}';
     }

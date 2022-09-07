@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fec2ea5e-61d3-464e-af31-1db71e0aeb89" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_10_43_p__m___Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_10_43_p_ m__[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/CarteraApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/CarteraApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/Empleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/Empleados.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +56,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="616cbd3c-771c-44ea-8029-83ffe512bde4" name="Changes" comment="" />
+      <changelist id="fec2ea5e-61d3-464e-af31-1db71e0aeb89" name="Changes" comment="" />
       <created>1661829854496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
