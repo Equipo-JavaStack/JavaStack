@@ -1,14 +1,36 @@
 package co.gov.javastack.contable.cartera.entidades;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="empresas")
 public class Empresa {
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_Empresa")
     private long idEmpresa;
+
+    @Column(name="nombre_Empresa")
     private String nombreEmpresa;
+
+    @Column(name="direccion_Empresa")
     private String direccionEmpresa;
+
+    @Column(name="telefono_Empresa")
     private String telefonoEmpresa;
+
+    @Column(name="nit_Empresa")
     private String nitEmpresa;
+
+    @Column(name="estado_Empresa")
     private boolean estadoEmpresa;
 
+
+    public Empresa() {
+    }
 
     public Empresa(long idEmpresa, String nombreEmpresa, String direccionEmpresa, String telefonoEmpresa, String nitEmpresa, boolean estadoEmpresa) {
         this.idEmpresa = idEmpresa;

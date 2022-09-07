@@ -6,17 +6,18 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+
 public interface IMovimientoDineroService {
 
-    public MovimientoDinero findById(int id);
+  public MovimientoDinero findById (int id);
 
-    public List<MovimientoDinero> findAll();
+  public List<MovimientoDinero> findAll();
 
-    public MovimientoDinero createUsuario(MovimientoDinero movimientoDinero);
+  public MovimientoDinero createMovimientoDinero(MovimientoDinero movimientoDinero);
 
-    public MovimientoDinero updateUsuario(MovimientoDinero movimientoDinero);
+  public MovimientoDinero updateMovimientoDinero(MovimientoDinero movimientoDinero);
 
-    public void deleteUsuario(long id);
+  public void deteleMovimientoDinero(long id);
+
 
 }
