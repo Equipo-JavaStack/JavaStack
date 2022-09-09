@@ -9,6 +9,7 @@ public class MovimientoDinero {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idMovimiento;
     @Column(name="concepto_Dinero")
     private String conceptoDinero;
 

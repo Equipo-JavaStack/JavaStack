@@ -41,7 +41,7 @@ public class Empleados {
         this.empresaEmplado = empresaEmplado;
         this.correoEmpleado = correoEmpleado;
         this.pass = pass;
-        this.rol = rol;
+        this.rol = null;
         this.estado = estado;
     }
 
