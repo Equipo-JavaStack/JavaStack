@@ -1,10 +1,5 @@
 package co.gov.javastack.contable.cartera.service;
-
-<<<<<<< HEAD
-public class EmpresaService {
-=======
 import co.gov.javastack.contable.cartera.entidades.Empresa;
-import co.gov.javastack.contable.cartera.repositorio.IEmpleadosRepositorio;
 import co.gov.javastack.contable.cartera.repositorio.IEmpresaRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +12,7 @@ public class EmpresaService implements IEmpresaService {
 
     @Autowired
     private IEmpresaRepositorio empresaRepositorio;
+
     @Override
     public Empresa findById(int id) {
         Optional<Empresa> empresa = empresaRepositorio.findById((long) id);
@@ -25,7 +21,7 @@ public class EmpresaService implements IEmpresaService {
 
     @Override
     public List<Empresa> findAll() {
-        List<Empresa> empresa = (List<Empresa>)  empresaRepositorio.findAll();
+        List<Empresa> empresa = (List<Empresa>) empresaRepositorio.findAll();
         return empresa;
     }
 
@@ -42,8 +38,10 @@ public class EmpresaService implements IEmpresaService {
     }
 
     @Override
-    public void deleteEmpresa(long id) {empresaRepositorio.deleteById(id);
+    public void deleteEmpresa(long id) {
+        empresaRepositorio.deleteById(id);
 
     }
->>>>>>> development
+
+}
 }

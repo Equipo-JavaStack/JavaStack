@@ -24,11 +24,9 @@ public class Empleados {
 
     @Column(name="pass_Empleado")
     private String pass;
-<<<<<<< HEAD
+
     private Rol rol;
     private boolean estado;
-
-=======
 
     @Column(name="rol_Empleado")
     private Rol rol;
@@ -39,7 +37,6 @@ public class Empleados {
     public Empleados() {
     }
 
->>>>>>> development
     public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, Rol rol, boolean estado) {
         this.idEmpleado = idEmpleado;
         this.nombreEmpleado = nombreEmpleado;

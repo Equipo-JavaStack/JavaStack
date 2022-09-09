@@ -1,13 +1,7 @@
 package co.gov.javastack.contable.cartera;
 
-import co.gov.javastack.contable.cartera.entidades.*;
-<<<<<<< HEAD
 
-import co.gov.javastack.contable.cartera.entidades.Empleados;
-import co.gov.javastack.contable.cartera.entidades.Empresa;
-import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
-=======
->>>>>>> development
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,16 +1,14 @@
 package co.gov.javastack.contable.cartera.service;
 
-<<<<<<< HEAD
-public class MovimientoDineroService {
-}
-=======
 import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
 import co.gov.javastack.contable.cartera.repositorio.IMovimientoDineroRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
+
+public class MovimientoDineroService {
+}
 
 @Service
 public class MovimientoDineroService implements IMovimientoDineroService {
@@ -48,4 +46,4 @@ public class MovimientoDineroService implements IMovimientoDineroService {
 
 
 
->>>>>>> development
+
