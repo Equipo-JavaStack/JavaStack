@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fec2ea5e-61d3-464e-af31-1db71e0aeb89" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/cartera/cartera/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cartera/cartera/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_10_43_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_08_2022_10_43_p__m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/Empleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/Empleados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/cartera/cartera/src/main/java/co/gov/javastack/contable/cartera/entidades/MovimientoDinero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +61,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Fredy Ordoñez Perez/Desktop/Mintic2022/Ciclo III/codigos profesor clase/MisionTIC-2022-Ciclo-3/ingresoegreso",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Fredy Ordoñez Perez/Desktop/Mintic2022/Ciclo III/codigos profesor clase/MisionTIC-2022-Ciclo-3/ingresoegreso&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="co.gov.javastack.contable.cartera.service" />

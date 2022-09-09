@@ -22,15 +22,19 @@ public class MovimientoDinero {
     @Column(name="usuario_Movimiento")
     private String usuarioMovimiento;
 
+    @Column(name="id_usuario_Movimiento")
+    private long id_usuario_Movimiento;
+
 
     public MovimientoDinero() {
     }
 
-    public MovimientoDinero(long ingresoDinero, long egresoDinero, String conceptoDinero, String usuarioMovimiento) {
+    public MovimientoDinero(long ingresoDinero, long egresoDinero, String conceptoDinero, String usuarioMovimiento, long id_usuario_Movimiento) {
         this.ingresoDinero = ingresoDinero;
         this.egresoDinero = egresoDinero;
         this.conceptoDinero = conceptoDinero;
         this.usuarioMovimiento = usuarioMovimiento;
+        this.id_usuario_Movimiento= id_usuario_Movimiento;
     }
 
     public long getIngresoDinero() {
@@ -65,15 +69,31 @@ public class MovimientoDinero {
         this.usuarioMovimiento = usuarioMovimiento;
     }
 
+    public long getIdMovimiento() {
+        return idMovimiento;
+    }
+
+    public void setIdMovimiento(long idMovimiento) {
+        this.idMovimiento = idMovimiento;
+    }
+
+    public long getId_usuario_Movimiento() {
+        return id_usuario_Movimiento;
+    }
+
+    public void setId_usuario_Movimiento(long id_usuario_Movimiento) {
+        this.id_usuario_Movimiento = id_usuario_Movimiento;
+    }
+
     @Override
     public String toString() {
         return "MovimientoDinero{" +
-                "ingresoDinero=" + ingresoDinero +
-                ", egresoDinero=" + egresoDinero +
+                "idMovimiento=" + idMovimiento +
                 ", conceptoDinero='" + conceptoDinero + '\'' +
+                ", ingresoDinero=" + ingresoDinero +
+                ", egresoDinero=" + egresoDinero +
                 ", usuarioMovimiento='" + usuarioMovimiento + '\'' +
+                ", id_usuario_Movimiento=" + id_usuario_Movimiento +
                 '}';
     }
-
-
 }

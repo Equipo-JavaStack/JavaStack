@@ -31,10 +31,14 @@ public class Empleados {
     @Column(name="estado_Empleado")
     private boolean estado;
 
+    @Column(name="id_Empresa_Empleado")
+    private long id_Empresa_Empleado;
+
+
     public Empleados() {
     }
 
-    public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, Rol rol, boolean estado) {
+    public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, Rol rol, boolean estado, long id_Empresa_Empleado) {
         this.idEmpleado = idEmpleado;
         this.nombreEmpleado = nombreEmpleado;
         this.apellidoEmpleado = apellidoEmpleado;
@@ -43,6 +47,7 @@ public class Empleados {
         this.pass = pass;
         this.rol = rol;
         this.estado = estado;
+        this.id_Empresa_Empleado=id_Empresa_Empleado;
     }
 
     public long getIdEmpleado() {
@@ -109,6 +114,14 @@ public class Empleados {
         this.estado = estado;
     }
 
+    public long getId_Empresa_Empleado() {
+        return id_Empresa_Empleado;
+    }
+
+    public void setId_Empresa_Empleado(long id_Empresa_Empleado) {
+        this.id_Empresa_Empleado = id_Empresa_Empleado;
+    }
+
     @Override
     public String toString() {
         return "Empleados{" +
@@ -120,6 +133,7 @@ public class Empleados {
                 ", pass='" + pass + '\'' +
                 ", rol=" + rol +
                 ", estado=" + estado +
+                ", id_Empresa_Empleado=" + id_Empresa_Empleado +
                 '}';
     }
 }

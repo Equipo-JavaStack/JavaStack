@@ -20,10 +20,10 @@ public class Empresa {
     private String direccionEmpresa;
 
     @Column(name="telefono_Empresa")
-    private String telefonoEmpresa;
+    private long telefonoEmpresa;
 
     @Column(name="nit_Empresa")
-    private String nitEmpresa;
+    private long nitEmpresa;
 
     @Column(name="estado_Empresa")
     private boolean estadoEmpresa;
@@ -32,7 +32,7 @@ public class Empresa {
     public Empresa() {
     }
 
-    public Empresa(long idEmpresa, String nombreEmpresa, String direccionEmpresa, String telefonoEmpresa, String nitEmpresa, boolean estadoEmpresa) {
+    public Empresa(long idEmpresa, String nombreEmpresa, String direccionEmpresa, long telefonoEmpresa, long nitEmpresa, boolean estadoEmpresa) {
         this.idEmpresa = idEmpresa;
         this.nombreEmpresa = nombreEmpresa;
         this.direccionEmpresa = direccionEmpresa;
@@ -65,19 +65,19 @@ public class Empresa {
         this.direccionEmpresa = direccionEmpresa;
     }
 
-    public String getTelefonoEmpresa() {
+    public long getTelefonoEmpresa() {
         return telefonoEmpresa;
     }
 
-    public void setTelefonoEmpresa(String telefonoEmpresa) {
+    public void setTelefonoEmpresa(long telefonoEmpresa) {
         this.telefonoEmpresa = telefonoEmpresa;
     }
 
-    public String getNitEmpresa() {
+    public long getNitEmpresa() {
         return nitEmpresa;
     }
 
-    public void setNitEmpresa(String nitEmpresa) {
+    public void setNitEmpresa(long nitEmpresa) {
         this.nitEmpresa = nitEmpresa;
     }
 
