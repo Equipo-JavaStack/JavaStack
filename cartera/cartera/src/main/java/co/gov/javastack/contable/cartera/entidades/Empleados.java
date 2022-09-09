@@ -1,15 +1,45 @@
 package co.gov.javastack.contable.cartera.entidades;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="empleados")
 public class Empleados {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_empleados")
     private long idEmpleado;
+
+    @Column(name="nombre_Empleado")
     private String nombreEmpleado;
+
+    @Column(name="apellido_Empleado")
     private String apellidoEmpleado;
+
+    @Column(name="empresa_Empleado")
     private String empresaEmplado;
+
+    @Column(name="correo_Empleado")
     private String correoEmpleado;
+
+    @Column(name="pass_Empleado")
     private String pass;
+<<<<<<< HEAD
     private Rol rol;
     private boolean estado;
 
+=======
+
+    @Column(name="rol_Empleado")
+    private Rol rol;
+
+    @Column(name="estado_Empleado")
+    private boolean estado;
+
+    public Empleados() {
+    }
+
+>>>>>>> development
     public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, Rol rol, boolean estado) {
         this.idEmpleado = idEmpleado;
         this.nombreEmpleado = nombreEmpleado;
@@ -17,7 +47,7 @@ public class Empleados {
         this.empresaEmplado = empresaEmplado;
         this.correoEmpleado = correoEmpleado;
         this.pass = pass;
-        this.rol = rol;
+        this.rol = null;
         this.estado = estado;
     }
 

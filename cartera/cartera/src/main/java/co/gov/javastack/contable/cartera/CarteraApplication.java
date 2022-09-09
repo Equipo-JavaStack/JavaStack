@@ -1,10 +1,13 @@
 package co.gov.javastack.contable.cartera;
 
 import co.gov.javastack.contable.cartera.entidades.*;
+<<<<<<< HEAD
 
 import co.gov.javastack.contable.cartera.entidades.Empleados;
 import co.gov.javastack.contable.cartera.entidades.Empresa;
 import co.gov.javastack.contable.cartera.entidades.MovimientoDinero;
+=======
+>>>>>>> development
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +17,8 @@ public class CarteraApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CarteraApplication.class, args);
+
+		/*
 		//EMPRESA
 		Empresa empresa = new Empresa(1,"JavaStack","calle 20 #5-5","7219292","12345",true);
 		System.out.println(empresa);
@@ -48,7 +53,7 @@ public class CarteraApplication {
 		movDin.getConceptoDinero();
 		System.out.println(movDin);
 
-
+*/
 
 
 

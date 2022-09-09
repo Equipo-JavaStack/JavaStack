@@ -1,11 +1,30 @@
 package co.gov.javastack.contable.cartera.entidades;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="movimiento_Dinero")
 public class MovimientoDinero {
-    private long ingresoDinero;
-    private long egresoDinero;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idMovimiento;
+    @Column(name="concepto_Dinero")
     private String conceptoDinero;
+
+    @Column(name="ingreso_Dinero")
+    private long ingresoDinero;
+
+    @Column(name="egreso_Dinero")
+    private long egresoDinero;
+
+    @Column(name="usuario_Movimiento")
     private String usuarioMovimiento;
 
+
+    public MovimientoDinero() {
+    }
 
     public MovimientoDinero(long ingresoDinero, long egresoDinero, String conceptoDinero, String usuarioMovimiento) {
         this.ingresoDinero = ingresoDinero;
