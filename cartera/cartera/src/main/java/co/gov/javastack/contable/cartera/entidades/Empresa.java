@@ -1,16 +1,38 @@
 package co.gov.javastack.contable.cartera.entidades;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="empresas")
 public class Empresa {
 
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_Empresa")
     private long idEmpresa;
+
+    @Column(name="nombre_Empresa")
     private String nombreEmpresa;
+
+    @Column(name="direccion_Empresa")
     private String direccionEmpresa;
-    private String telefonoEmpresa;
-    private String nitEmpresa;
+
+    @Column(name="telefono_Empresa")
+    private long telefonoEmpresa;
+
+    @Column(name="nit_Empresa")
+    private long nitEmpresa;
+
+    @Column(name="estado_Empresa")
     private boolean estadoEmpresa;
 
 
-    public Empresa(long idEmpresa, String nombreEmpresa, String direccionEmpresa, String telefonoEmpresa, String nitEmpresa, boolean estadoEmpresa) {
+    public Empresa() {
+    }
+
+    public Empresa(long idEmpresa, String nombreEmpresa, String direccionEmpresa, long telefonoEmpresa, long nitEmpresa, boolean estadoEmpresa) {
         this.idEmpresa = idEmpresa;
         this.nombreEmpresa = nombreEmpresa;
         this.direccionEmpresa = direccionEmpresa;
@@ -43,19 +65,19 @@ public class Empresa {
         this.direccionEmpresa = direccionEmpresa;
     }
 
-    public String getTelefonoEmpresa() {
+    public long getTelefonoEmpresa() {
         return telefonoEmpresa;
     }
 
-    public void setTelefonoEmpresa(String telefonoEmpresa) {
+    public void setTelefonoEmpresa(long telefonoEmpresa) {
         this.telefonoEmpresa = telefonoEmpresa;
     }
 
-    public String getNitEmpresa() {
+    public long getNitEmpresa() {
         return nitEmpresa;
     }
 
-    public void setNitEmpresa(String nitEmpresa) {
+    public void setNitEmpresa(long nitEmpresa) {
         this.nitEmpresa = nitEmpresa;
     }
 
