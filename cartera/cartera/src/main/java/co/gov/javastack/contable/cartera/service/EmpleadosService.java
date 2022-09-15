@@ -1,8 +1,5 @@
 package co.gov.javastack.contable.cartera.service;
 
-<<<<<<< HEAD
-public class EmpleadosService {
-=======
 import co.gov.javastack.contable.cartera.entidades.Empleados;
 import co.gov.javastack.contable.cartera.repositorio.IEmpleadosRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+    public class EmpleadosService {
 @Service
 public class EmpleadosService implements IEmpleadosService {
 
@@ -44,5 +41,5 @@ public class EmpleadosService implements IEmpleadosService {
         empleadosRepositorio.deleteById(id);
 
     }
->>>>>>> development
-}
+
+}}
