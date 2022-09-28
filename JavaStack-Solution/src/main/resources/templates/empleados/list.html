@@ -9,9 +9,9 @@
 <div class="container">
     <h2>Lista de Empleados</h2>
     <hr>
-    <a th:href="@{/}">Home</a>
-    <br>
-    <a th:href="@{/empleados/modificarUser}">Nuevo usuario</a>
+    <a Class="btn btn-primary btn-sm" th:href="@{/}">Home</a>
+
+    <a Class="btn btn-primary btn-sm" th:href="@{/empleados/modificarUser}">Nuevo usuario</a>
     <br>
     <div>
     <table class="table table-striped">
@@ -19,6 +19,7 @@
             <th>Id</th>
             <th>Nombres</th>
             <th>Apellidos</th>
+            <th>Empresa</th>
             <th>Email</th>
             <th>Rol</th>
 
@@ -27,6 +28,7 @@
             <td th:text="${empleado.idEmpleado}"></td>
             <td th:text="${empleado.nombreEmpleado}"></td>
             <td th:text="${empleado.apellidoEmpleado}"></td>
+            <td th:text="${empleado.idEmpresa.nombreEmpresa}"></td>
             <td th:text="${empleado.correoEmpleado}" ></td>
             <td th:text="${empleado.rol}" ></td>
 

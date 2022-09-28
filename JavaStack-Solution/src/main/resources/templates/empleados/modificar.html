@@ -7,13 +7,13 @@
 
 </head>
 <body>
-<a th:href="@{/}">Home</a>
+<a Class="btn btn-primary btn-sm" th:href="@{/}">Home</a>
 <br>
     <h1>Datos del empleado</h1>
 <hr>
 
 <div class="container">
-    <form id="customer-form" th:action="@{/guardar}" method="post" th:object="${empleados}">
+    <form id="customer-form" th:action="@{/Guardar}" method="post" th:object="${empleados}">
         <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nombres </label>
         <input type="text" name="nombre" class="form-control" id="exampleFormControlInput1" th:field="*{nombreEmpleado}"/>
