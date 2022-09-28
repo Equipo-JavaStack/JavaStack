@@ -1,12 +1,17 @@
 package com.gov.cartera.JavaStackSolution.entidades;
 
+import lombok.*;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
-
 @Entity
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @ToString
+
+
 @Table(name="empleados")
-public class Empleados {
+public class Empleados implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_empleados")
@@ -18,9 +23,6 @@ public class Empleados {
     @Column(name="apellido_Empleado")
     private String apellidoEmpleado;
 
-    @Column(name="empresa_Empleado")
-    private String empresaEmplado;
-
     @Column(name="correo_Empleado")
     private String correoEmpleado;
 
@@ -30,126 +32,17 @@ public class Empleados {
     @Column(name="rol_Empleado")
     private Rol rol;
 
+
     @Column(name="estado_Empleado")
     private boolean estado;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "EMPRESA_ID")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "emperesa_id")
     private Empresa idEmpresa;
 
     //revisar
     @OneToMany(mappedBy = "idEmpleados")
     private List<MovimientoDinero> movimientoDinero;
 
-    public Empleados() {
-    }
-
-    public Empleados(long idEmpleado, String nombreEmpleado, String apellidoEmpleado, String empresaEmplado, String correoEmpleado, String pass, Rol rol, boolean estado, Empresa idEmpresa, List<MovimientoDinero> movimientoDinero) {
-        this.idEmpleado = idEmpleado;
-        this.nombreEmpleado = nombreEmpleado;
-        this.apellidoEmpleado = apellidoEmpleado;
-        this.empresaEmplado = empresaEmplado;
-        this.correoEmpleado = correoEmpleado;
-        this.pass = pass;
-        this.rol = rol;
-        this.estado = estado;
-        this.idEmpresa = idEmpresa;
-        this.movimientoDinero = movimientoDinero;
-    }
-
-    public long getIdEmpleado() {
-        return idEmpleado;
-    }
-
-    public void setIdEmpleado(long idEmpleado) {
-        this.idEmpleado = idEmpleado;
-    }
-
-    public String getNombreEmpleado() {
-        return nombreEmpleado;
-    }
-
-    public void setNombreEmpleado(String nombreEmpleado) {
-        this.nombreEmpleado = nombreEmpleado;
-    }
-
-    public String getApellidoEmpleado() {
-        return apellidoEmpleado;
-    }
-
-    public void setApellidoEmpleado(String apellidoEmpleado) {
-        this.apellidoEmpleado = apellidoEmpleado;
-    }
-
-    public String getEmpresaEmplado() {
-        return empresaEmplado;
-    }
-
-    public void setEmpresaEmplado(String empresaEmplado) {
-        this.empresaEmplado = empresaEmplado;
-    }
-
-    public String getCorreoEmpleado() {
-        return correoEmpleado;
-    }
-
-    public void setCorreoEmpleado(String correoEmpleado) {
-        this.correoEmpleado = correoEmpleado;
-    }
-
-    public String getPass() {
-        return pass;
-    }
-
-    public void setPass(String pass) {
-        this.pass = pass;
-    }
-
-    public Rol getRol() {
-        return rol;
-    }
-
-    public void setRol(Rol rol) {
-        this.rol = rol;
-    }
-
-    public boolean isEstado() {
-        return estado;
-    }
-
-    public void setEstado(boolean estado) {
-        this.estado = estado;
-    }
-
-    public Empresa getIdEmpresa() {
-        return idEmpresa;
-    }
-
-    public void setIdEmpresa(Empresa idEmpresa) {
-        this.idEmpresa = idEmpresa;
-    }
-
-    public List<MovimientoDinero> getMovimientoDinero() {
-        return movimientoDinero;
-    }
-
-    public void setMovimientoDinero(List<MovimientoDinero> movimientoDinero) {
-        this.movimientoDinero = movimientoDinero;
-    }
-
-    @Override
-    public String toString() {
-        return "Empleados{" +
-                "idEmpleado=" + idEmpleado +
-                ", nombreEmpleado='" + nombreEmpleado + '\'' +
-                ", apellidoEmpleado='" + apellidoEmpleado + '\'' +
-                ", empresaEmplado='" + empresaEmplado + '\'' +
-                ", correoEmpleado='" + correoEmpleado + '\'' +
-                ", pass='" + pass + '\'' +
-                ", rol=" + rol +
-                ", estado=" + estado +
-                ", idEmpresa=" + idEmpresa +
-                ", movimientoDinero=" + movimientoDinero +
-                '}';
-    }
 }
+

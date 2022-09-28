@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos del Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+<a th:href="@{/}">Home</a>
+<br>
+    <h1>Datos del empleado</h1>
+
+    <form th:action="@{/guardar}" method="post" th:object="${empleados}">
+        <label for="nombre">Nombres</label>
+        <input type="text" name="nombre" th:field="*{nombreEmpleado}"/>
+        <br>
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido" th:field="*{apellidoEmpleado}"/>
+        <br>
+        <!--Esto es un combobox-->
+        <label for="empresa">Empresa</label>
+        <select th:field="*{idEmpresa.idEmpresa}" name="empresa" >
+            <option value="0" selected>Seleccione empresa</option>
+
+            <option th:each="emp : ${empresas}"
+                    th:value="${emp.idEmpresa}"
+                    th:text="${emp.nombreEmpresa}">
+            </option>
+        </select>
+    </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

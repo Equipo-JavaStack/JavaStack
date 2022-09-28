@@ -1,13 +1,16 @@
 package com.gov.cartera.JavaStackSolution.entidades;
 
+import lombok.*;
+
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor
 @Table(name="empresas")
-public class Empresa {
-
+public class Empresa implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,89 +32,8 @@ public class Empresa {
     @Column(name="estado_Empresa")
     private boolean estadoEmpresa;
 
-    @OneToMany(mappedBy = "idEmpresa", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "idEmpresa", fetch = FetchType.EAGER)
     private List<Empleados> empleados;
 
 
-    public Empresa() {
-    }
-
-    public Empresa(long idEmpresa, String nombreEmpresa, String direccionEmpresa, String telefonoEmpresa, String nitEmpresa, boolean estadoEmpresa, List<Empleados> empleados) {
-        this.idEmpresa = idEmpresa;
-        this.nombreEmpresa = nombreEmpresa;
-        this.direccionEmpresa = direccionEmpresa;
-        this.telefonoEmpresa = telefonoEmpresa;
-        this.nitEmpresa = nitEmpresa;
-        this.estadoEmpresa = estadoEmpresa;
-        this.empleados = empleados;
-    }
-
-    public long getIdEmpresa() {
-        return idEmpresa;
-    }
-
-    public void setIdEmpresa(long idEmpresa) {
-        this.idEmpresa = idEmpresa;
-    }
-
-    public String getNombreEmpresa() {
-        return nombreEmpresa;
-    }
-
-    public void setNombreEmpresa(String nombreEmpresa) {
-        this.nombreEmpresa = nombreEmpresa;
-    }
-
-    public String getDireccionEmpresa() {
-        return direccionEmpresa;
-    }
-
-    public void setDireccionEmpresa(String direccionEmpresa) {
-        this.direccionEmpresa = direccionEmpresa;
-    }
-
-    public String getTelefonoEmpresa() {
-        return telefonoEmpresa;
-    }
-
-    public void setTelefonoEmpresa(String telefonoEmpresa) {
-        this.telefonoEmpresa = telefonoEmpresa;
-    }
-
-    public String getNitEmpresa() {
-        return nitEmpresa;
-    }
-
-    public void setNitEmpresa(String nitEmpresa) {
-        this.nitEmpresa = nitEmpresa;
-    }
-
-    public boolean isEstadoEmpresa() {
-        return estadoEmpresa;
-    }
-
-    public void setEstadoEmpresa(boolean estadoEmpresa) {
-        this.estadoEmpresa = estadoEmpresa;
-    }
-
-    public List<Empleados> getEmpleados() {
-        return empleados;
-    }
-
-    public void setEmpleados(List<Empleados> empleados) {
-        this.empleados = empleados;
-    }
-
-    @Override
-    public String toString() {
-        return "Empresa{" +
-                "idEmpresa=" + idEmpresa +
-                ", nombreEmpresa='" + nombreEmpresa + '\'' +
-                ", direccionEmpresa='" + direccionEmpresa + '\'' +
-                ", telefonoEmpresa='" + telefonoEmpresa + '\'' +
-                ", nitEmpresa='" + nitEmpresa + '\'' +
-                ", estadoEmpresa=" + estadoEmpresa +
-                ", empleados=" + empleados +
-                '}';
-    }
 }
