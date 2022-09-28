@@ -10,17 +10,23 @@
 <a th:href="@{/}">Home</a>
 <br>
     <h1>Datos del empleado</h1>
+<hr>
 
-    <form th:action="@{/guardar}" method="post" th:object="${empleados}">
-        <label for="nombre">Nombres</label>
-        <input type="text" name="nombre" th:field="*{nombreEmpleado}"/>
-        <br>
-        <label for="apellido">Apellidos</label>
-        <input type="text" name="apellido" th:field="*{apellidoEmpleado}"/>
-        <br>
+<div class="container">
+    <form id="customer-form" th:action="@{/guardar}" method="post" th:object="${empleados}">
+        <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombres </label>
+        <input type="text" name="nombre" class="form-control" id="exampleFormControlInput1" th:field="*{nombreEmpleado}"/>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Apellidos </label>
+            <input type="text" name="apellido" class="form-control" id="exampleFormControlInput1" th:field="*{apellidoEmpleado}"/>
+        </div>
+
+        <div class="mb-3">
         <!--Esto es un combobox-->
-        <label for="empresa">Empresa</label>
-        <select th:field="*{idEmpresa.idEmpresa}" name="empresa" >
+        <label for="exampleFormControlInput1" class="form-label">Empresa</label>
+        <select class="form-select" aria-label="Default select example" th:field="*{idEmpresa.idEmpresa}" name="empresa" >
             <option value="0" selected>Seleccione empresa</option>
 
             <option th:each="emp : ${empresas}"
@@ -28,8 +34,25 @@
                     th:text="${emp.nombreEmpresa}">
             </option>
         </select>
-    </form>
+        </div>
 
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email </label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" th:field="*{correoEmpleado}"/>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Rol </label>
+            <input type="text" name="rol" class="form-control" id="exampleFormControlInput1" th:field="*{rol}"/>
+        </div>
+
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-success btn-block">
+                <i class="fas fa-check"></i> Guardar
+            </button>
+        </div>
+
+    </form>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@ package com.gov.cartera.JavaStackSolution.controlador;
 
 import com.gov.cartera.JavaStackSolution.entidades.Empleados;
 import com.gov.cartera.JavaStackSolution.entidades.Empresa;
+import com.gov.cartera.JavaStackSolution.entidades.Rol;
 import com.gov.cartera.JavaStackSolution.service.IEmpleadosService;
 import com.gov.cartera.JavaStackSolution.service.IEmpresaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.util.List;
 
 @Controller

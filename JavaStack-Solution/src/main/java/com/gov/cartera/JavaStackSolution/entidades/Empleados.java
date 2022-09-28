@@ -32,7 +32,6 @@ public class Empleados implements Serializable {
     @Column(name="rol_Empleado")
     private Rol rol;
 
-
     @Column(name="estado_Empleado")
     private boolean estado;
 
