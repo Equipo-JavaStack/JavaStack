@@ -2,18 +2,18 @@ package com.gov.cartera.JavaStackSolution.controlador;
 
 import com.gov.cartera.JavaStackSolution.entidades.Empleados;
 import com.gov.cartera.JavaStackSolution.entidades.Empresa;
-import com.gov.cartera.JavaStackSolution.entidades.Rol;
 import com.gov.cartera.JavaStackSolution.service.IEmpleadosService;
 import com.gov.cartera.JavaStackSolution.service.IEmpresaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 
-import javax.persistence.Column;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+
 import java.util.List;
+
 
 @Controller
 public class EmpleadoController {
@@ -26,7 +26,9 @@ public class EmpleadoController {
     @GetMapping("/empleados/listemplados")
     public String getListEmpleados(Model model){
         List<Empleados> empleados = empleadosService.findAll();
+        List<Empresa> empresas = empresaService.findAll();
         model.addAttribute("empleados", empleados);
+        //model.addAttribute("empresas", empresas);
 
         for (Empleados emp : empleados) {
             System.out.println(emp.toString());
@@ -50,4 +52,11 @@ public class EmpleadoController {
 
 
     }
+
+    @PostMapping("/Guardar")
+    public String guardarEmpleado(@ModelAttribute Empleados empleados){
+        empleadosService.createEmpleados(empleados);
+
+            return "redirect:/empleados/listemplados/";
+        }
 }
